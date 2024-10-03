@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
   Environment,
   OrbitControls,
@@ -24,6 +25,32 @@ function App() {
       {/* IGNORE FOR NOW */}
       <City />
       <Environment preset="city" />
+=======
+import { Canvas } from "@react-three/fiber";
+
+function App() {
+  return (
+    <Canvas camera={{ position: [0, 3, 8] }}>
+      {/* Lighting */}
+      <ambientLight intensity={0.5} />
+      <directionalLight position={[0, 3, 5]} intensity={0.5} />
+
+      {/* Objects */}
+      <group position={[-2, -2, 0]} scale={[2, 2, 2]} rotation-y={Math.PI / 4}>
+        <mesh position={[-1, 0, 0]}>
+          <boxGeometry />
+          <meshStandardMaterial color="red" />
+        </mesh>
+        <mesh position={[0, 0, 0]}>
+          <boxGeometry />
+          <meshStandardMaterial color="blue" />
+        </mesh>
+        <mesh position={[1, 0, 0]}>
+          <boxGeometry />
+          <meshStandardMaterial color="green" />
+        </mesh>
+      </group>
+>>>>>>> dbb23ca6cd52591a7bb5bdbfe36082ad20b11cc2
     </Canvas>
   );
 }

@@ -1,7 +1,11 @@
 {
   "name": "react-three-fiber-starter",
   "private": true,
+<<<<<<< HEAD
   "version": "1.0.0",
+=======
+  "version": "0.0.0",
+>>>>>>> dbb23ca6cd52591a7bb5bdbfe36082ad20b11cc2
   "type": "module",
   "scripts": {
     "dev": "vite",
